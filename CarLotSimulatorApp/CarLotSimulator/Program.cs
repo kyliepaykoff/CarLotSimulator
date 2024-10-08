@@ -4,10 +4,13 @@ using System.Xml.Schema;
 
 namespace CarLotSimulator
 {
-    class Program
+     class Program
     {
         static void Main(string[] args)
         {
+
+           
+
             //TODO
 
             //Create a seperate class file called Car
@@ -28,6 +31,7 @@ namespace CarLotSimulator
             toyota.MakeEngineNoise();
             toyota.MakeHonkNoise();
             //The methods should take one string parameter: the respective noise property
+            Console.WriteLine($"The number of cars in the lot is {CarLot.numberOfCars}");
 
 
             //Now that the Car class is created we can instanciate 3 new cars
@@ -49,11 +53,12 @@ namespace CarLotSimulator
 
 
             };
+            Console.WriteLine($"The number of cars in the lot is {CarLot.numberOfCars}");
 
             var dreamCar = new Car("Toyota", "Sequoia", 2024, true, "Vroooooooooom", "EHH EHH");
 
 
-
+            Console.WriteLine($"The number of cars in the lot is {CarLot.numberOfCars}");
 
 
 

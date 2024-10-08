@@ -9,7 +9,10 @@ namespace CarLotSimulator
 {
     public class Car
     {
-
+        public Car()
+        {
+            CarLot.numberOfCars++;
+        }
         public string Make { get; set; }
         public string Model { get; set; }
         public int Year { get; set; }
@@ -19,9 +22,7 @@ namespace CarLotSimulator
 
        
 
-        public Car()
-        {
-        }
+        
 
         public Car(string make, string model, int year, bool isDriveable, string engineNoise, string honkNoise)
         {
@@ -30,8 +31,9 @@ namespace CarLotSimulator
             Year = year;    
             IsDriveable = isDriveable;  
             EngineNoise = engineNoise;  
-            HonkNoise = honkNoise;  
+            HonkNoise = honkNoise;
 
+            CarLot.numberOfCars++;
 
 
 
